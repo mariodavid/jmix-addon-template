@@ -6,7 +6,7 @@ It contains:
 
 * run tests (on main branch and in PRs) 
   * in-memory HSQLDB
-  * Junit test results in pipelin"
+  * Junit test results in pipeline
 * publish release to Github Packages
 
 ## Prerequisite
