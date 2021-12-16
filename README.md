@@ -4,7 +4,9 @@ This addon template shows a working example of an integration with Github action
 
 It contains:
 
-* run tests
+* run tests (on main branch and in PRs) 
+  * in-memory HSQLDB
+  * Junit test results in pipelin"
 * publish release to Github Packages
 
 ## Prerequisite
