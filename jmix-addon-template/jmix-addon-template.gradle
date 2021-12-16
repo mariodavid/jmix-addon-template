@@ -11,6 +11,10 @@ dependencies {
     }
     testImplementation 'org.springframework.boot:spring-boot-starter-web'
 
+
+    testImplementation "org.mockito:mockito-core:4.1.0"
+    testImplementation "org.mockito:mockito-junit-jupiter:4.1.0"
+
     testRuntimeOnly 'org.hsqldb:hsqldb'
 }
 
