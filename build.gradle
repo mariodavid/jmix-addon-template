@@ -8,7 +8,7 @@ buildscript {
 }
 
 group = 'io.jmix.addon'
-version = '0.0.1-SNAPSHOT'
+
 
 subprojects {
     apply plugin: 'java-library'
@@ -17,9 +17,9 @@ subprojects {
 
     repositories {
         mavenCentral()
-                maven {
-        url 'https://global.repo.jmix.io/repository/public'
-    }
+        maven {
+            url 'https://global.repo.jmix.io/repository/public'
+        }
     }
 
     jmix {
@@ -45,7 +45,7 @@ subprojects {
 
     publishing {
         repositories {
-                    maven {
+            maven {
                 name = "GitHubPackages"
                 url = uri("https://maven.pkg.github.com/" + System.getenv("GITHUB_REPOSITORY"))
                 credentials {
