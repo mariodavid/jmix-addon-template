@@ -1,4 +1,4 @@
-name: Run CI pipeline
+name: CI pipeline
 
 on:
   push:
@@ -7,7 +7,8 @@ on:
   pull_request:
 
 jobs:
-  test:
+  ci:
+    name: CI pipeline
     runs-on: ubuntu-latest
     steps:
       - name: Git Checkout
@@ -18,5 +19,5 @@ jobs:
         with:
           java-version: 1.8
 
-      - name: Run Integration Tests
+      - name: Run tests
         run: ./gradlew test

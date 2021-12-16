@@ -7,6 +7,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.Optional;
+
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -27,7 +30,9 @@ class AddonTest {
 		Foo foo1 = dataManager.save(foo);
 		assertEquals(foo, foo1);
 
-		Foo foo2 = dataManager.load(Id.of(foo)).one();
-		assertEquals(foo, foo2);
+		Optional<Foo> reloadedFoo = dataManager.load(Id.of(foo)).optional();
+
+		assertThat(reloadedFoo)
+				.isEmpty();
 	}
 }
