@@ -22,6 +22,13 @@ jobs:
       - name: Run tests
         run: ./gradlew test
 
+      - name: ls
+        if: always()
+        run: ls -la
+      - name: pwd
+        if: always()
+        run: pwd
+
       - name: Test Results
         if: always()
         uses: actions/upload-artifact@v2
