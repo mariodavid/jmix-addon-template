@@ -21,3 +21,10 @@ jobs:
 
       - name: Run tests
         run: ./gradlew test
+
+
+      - name: Test Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: Test results
+          path: build/reports/tests/test/index.html
