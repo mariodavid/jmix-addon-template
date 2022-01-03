@@ -1,6 +1,6 @@
-package io.jmix.addon.template.screen.foo;
+package io.jmix.addon.template.test_support.screen.foo;
 
-import io.jmix.addon.template.entity.Foo;
+import io.jmix.addon.template.test_support.entity.Foo;
 import io.jmix.ui.navigation.Route;
 import io.jmix.ui.screen.EditedEntityContainer;
 import io.jmix.ui.screen.StandardEditor;

@@ -1,4 +1,4 @@
-package io.jmix.addon.template.entity;
+package io.jmix.addon.template.test_support.entity;
 
 import io.jmix.core.entity.annotation.JmixGeneratedValue;
 import io.jmix.core.metamodel.annotation.InstanceName;

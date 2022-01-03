@@ -1,6 +1,6 @@
 package io.jmix.addon.template;
 
-import io.jmix.addon.template.entity.Foo;
+import io.jmix.addon.template.test_support.entity.Foo;
 import io.jmix.core.DataManager;
 import io.jmix.core.Id;
 import org.junit.jupiter.api.Test;
