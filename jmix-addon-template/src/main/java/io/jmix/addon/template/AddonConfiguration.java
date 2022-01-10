@@ -5,6 +5,7 @@ import io.jmix.core.impl.scanning.AnnotationScanMetadataReaderFactory;
 import io.jmix.eclipselink.EclipselinkConfiguration;
 import io.jmix.ui.UiConfiguration;
 import io.jmix.ui.sys.UiControllersConfiguration;
+import org.springframework.boot.autoconfigure.security.SecurityDataConfiguration;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -17,7 +18,7 @@ import java.util.Collections;
 @Configuration
 @ComponentScan
 @ConfigurationPropertiesScan
-@JmixModule(dependsOn = {EclipselinkConfiguration.class, UiConfiguration.class})
+@JmixModule(dependsOn = {EclipselinkConfiguration.class, UiConfiguration.class, SecurityDataConfiguration.class})
 @PropertySource(name = "io.jmix.addon.template", value = "classpath:/io/jmix/addon/template/module.properties")
 public class AddonConfiguration {
 
