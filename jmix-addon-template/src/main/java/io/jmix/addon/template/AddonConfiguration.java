@@ -18,7 +18,11 @@ import java.util.Collections;
 @Configuration
 @ComponentScan
 @ConfigurationPropertiesScan
-@JmixModule(dependsOn = {EclipselinkConfiguration.class, UiConfiguration.class, SecurityDataConfiguration.class})
+@JmixModule(id = "io.jmix.addon.template", dependsOn = {
+        EclipselinkConfiguration.class,
+        UiConfiguration.class,
+        SecurityDataConfiguration.class
+})
 @PropertySource(name = "io.jmix.addon.template", value = "classpath:/io/jmix/addon/template/module.properties")
 public class AddonConfiguration {
 

@@ -19,7 +19,7 @@ import javax.sql.DataSource;
 @SpringBootConfiguration
 @EnableAutoConfiguration
 @Import(AddonConfiguration.class)
-@JmixModule(dependsOn = {AddonConfiguration.class, EclipselinkConfiguration.class, UiConfiguration.class, SecurityDataConfiguration.class})
+@JmixModule(id = "io.jmix.addon.template.test", dependsOn = AddonConfiguration.class)
 public class AddonTestConfiguration {
 
 
